@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="16dp"
+        android:background="#d7d7d7"
+        android:backgroundTint="#d7d7d7"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="305dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textViewKelas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelas"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinnerKelas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/Kelas"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textViewAbsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Absen"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAbsen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberSigned" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="30" />
+
+        <TextView
+            android:id="@+id/textViewTelpon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telpon"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTelpon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:inputType="phone" />
+
+        <TextView
+            android:id="@+id/textViewAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextAlamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="30" />
+
+        <TextView
+            android:id="@+id/textViewKelamin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/kelamin"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Laki - Laki" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Perempuan" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewMateri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Materi Metic yang dipelajari"
+            android:textColor="#0318ff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAPK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Desktop" />
+
+        <CheckBox
+            android:id="@+id/checkBoxROOT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Desain" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCWM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Editing" />
+
+        <CheckBox
+            android:id="@+id/checkBoxROM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaringan" />
+
+        <CheckBox
+            android:id="@+id/checkBoxVirus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desain Grafis" />
+
+        <Button
+            android:id="@+id/Daftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Daftar"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clickExit"
+            android:text="Batal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextViewHasil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            tools:text="hasil" />
+
+    </LinearLayout>
+</ScrollView>

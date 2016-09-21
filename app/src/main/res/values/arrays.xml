@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Kelas">
+        <item>10 RPL 1</item>
+        <item>10 RPL 2</item>
+        <item>10 RPL 3</item>
+        <item>10 RPL 4</item>
+        <item>10 RPL 5</item>
+        <item>10 RPL 6</item>
+        <item>10 TKJ 1</item>
+        <item>10 TKJ 2</item>
+        <item>10 TKJ 3</item>
+        <item>10 TKJ 4</item>
+        <item>10 TKJ 5</item>
+    </string-array>
+</resources>
